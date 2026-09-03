@@ -1,4 +1,4 @@
-#Horace Vial
+#Horace Vial & Trent Jorgensen
 #09/03/2026
 #Week 1 GitHub Archive Redis Project
 #Application that stores and analyzes GitHub Archive data using Redis
