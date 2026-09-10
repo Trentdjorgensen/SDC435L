@@ -1,4 +1,4 @@
-# SDC435L GitHub Archive Project
+# SDC435L
 **Trent Jorgensen & Horace Vial**  
 **ECPI University**
 
