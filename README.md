@@ -1,94 +1,64 @@
-# SDC435L / Trent Jorgensen & Horace Vial
+# SDC435L GitHub Archive Project
+**Trent Jorgensen & Horace Vial**  
+**ECPI University**
 
+## Project Overview
 
-## Project Description
+This repository contains the SDC435L GitHub Archive database project.
 
-This Python application uses Redis to store, retrieve, update, delete, and analyze data from the GitHub Archive dataset. The program reads JSON-formatted GitHub data and stores selected information in Redis so users can perform CRUD operations and view additional analysis features.
+The project uses Python to work with GitHub Archive data using different database technologies. Each week is stored in its own folder so the work for each assignment remains organized and separate.
 
-## Features
+## Repository Structure
 
-- Connects to a local Redis database using Python.
-- Reads JSON-formatted data from the GitHub Archive dataset.
-- Automatically loads repository, commit, and programming language data into Redis.
-- Supports basic CRUD operations:
-  - Create a repository record.
-  - Read a repository record.
-  - Update a repository record.
-  - Delete a repository record.
-- Displays the most popular repositories based on watch count.
-- Analyzes the most common programming languages in the dataset.
-- Allows users to search contributor history and view repositories they have contributed to.
-- Uses Redis hashes, sets, and sorted sets to organize stored data.
-- Includes error handling for missing files, invalid input, and Redis connection problems.
+### Week 1 - Redis
 
-## Dependencies
+The Week1 folder contains the Redis version of the GitHub Archive project.
 
-The following software and packages are required:
+The application:
 
-- Python 3
-- Redis Server
-- Python `redis` package
+- Reads JSON-formatted GitHub Archive data
+- Stores repository, commit, and language data in Redis
+- Performs Create, Read, Update, and Delete operations
+- Displays the most popular repositories based on watch count
+- Analyzes the most common programming languages
+- Allows users to search contributor commit history
 
-Install the Redis Python package with:
+Main file:
 
-```bash
-pip install redis
-```
+`Week1-Group-Redis.py`
 
-The program also uses the following Python standard library modules:
+---
 
-- `json`
-- `zipfile`
+### Week 2 - MongoDB
 
-These modules are included with Python and do not require separate installation.
+The Week2 folder contains the MongoDB version of the GitHub Archive project.
 
-## Technical Requirements
+The application:
 
-- Python 3.x
-- Redis installed and running locally
-- Redis server available at:
-  - Host: `127.0.0.1`
-  - Port: `6379`
-- `GitHubArchive-Dataset.zip` located in the same directory as the Python program
-- Python `redis` package installed
-- A system capable of running Python and Redis
+- Reads JSON-formatted GitHub Archive data
+- Stores repository, commit, and language data in MongoDB
+- Performs Create, Read, Update, and Delete operations
+- Displays the most popular repositories based on watch count
+- Analyzes the most common programming languages
+- Allows users to search contributor commit history
+
+Main file:
+
+`Week2-Group-MongoDB.py`
 
 ## Technologies Used
 
 - Python
 - Redis
+- MongoDB
+- PyMongo
 - JSON
-- GitHub Archive Dataset
-- Git
 - GitHub
 
-## Running the Application
+## Dataset
 
-1. Make sure Redis is installed and running.
-2. Place `GitHubArchive-Dataset.zip` in the same folder as the Python file.
-3. Install the Redis Python package if needed:
+The applications use the GitHub Archive dataset contained in:
 
-```bash
-pip install redis
-```
+`GitHubArchive-Dataset.zip`
 
-4. Run the program:
-
-```bash
-python Week1-GitHubArchive-vial.py
-```
-
-## Main Menu
-
-The program provides the following options:
-
-```text
-1. Create a repository record
-2. Read a repository record
-3. Update a repository record
-4. Delete a repository record
-5. View most popular repositories
-6. Analyze programming languages
-7. Search contributor history
-8. Exit
-```
+The dataset includes repository, commit, and programming language information used by the weekly applications.
