@@ -1,4 +1,4 @@
-#Horace Vial
+#Horace Vial & Trent Jorgensen
 #09/16/2026
 #GitHub Archive Cassandra Project
 #Python application that stores and analyzes GitHub Archive data using Cassandra
