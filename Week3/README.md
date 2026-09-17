@@ -1,13 +1,12 @@
 # SDC435L / Trent Jorgensen & Horace Vial
 
-
 ## Project Description
 
 This Python application uses Cassandra to store, retrieve, update, delete, and analyze data from the GitHub Archive dataset. The program reads JSON-formatted GitHub data and stores selected information in Cassandra so users can perform CRUD operations and view additional analysis features.
 
 ## Features
 
-- Connects to a local MongoDB using Python.
+- Connects to a local Cassandra database using Python.
 - Reads JSON-formatted data from the GitHub Archive dataset.
 - Automatically loads repository, commit, and programming language data into Cassandra.
 - Supports basic CRUD operations:
@@ -28,35 +27,35 @@ The following software and packages are required:
 - Apache Cassandra
 - Python `cassandra-driver` package
 
-Install the MongoDB Python package with:
+Install the Cassandra Python package with:
 
 ```bash
-pip install cassandra
+pip install cassandra-driver
 ```
 
 The program also uses the following Python standard library modules:
 
 - `json`
 - `zipfile`
-- 'cassandra.cluster'
 
-These modules are included with Python and do not require separate installation.
+The `json` and `zipfile` modules are included with Python and do not require separate installation.
 
 ## Technical Requirements
 
 - Python 3.x
-- MongoDB installed and running locally
-- MongoDB server available at:
+- Apache Cassandra installed and running locally
+- Cassandra server available at:
   - Host: `127.0.0.1`
-  - Port: `6379`
+  - Port: `9042`
 - `GitHubArchive-Dataset.zip` located in the same directory as the Python program
-- Python `pymongo` package installed
-- A system capable of running Python and MongoDB
+- Python `cassandra-driver` package installed
+- A system capable of running Python and Cassandra
 
 ## Technologies Used
 
 - Python
-- MongoDB
+- Apache Cassandra
+- CQL
 - JSON
 - GitHub Archive Dataset
 - Git
@@ -64,18 +63,18 @@ These modules are included with Python and do not require separate installation.
 
 ## Running the Application
 
-1. Make sure MongoDB is installed and running.
+1. Make sure Apache Cassandra is installed and running.
 2. Place `GitHubArchive-Dataset.zip` in the same folder as the Python file.
-3. Install the MongoDB Python package if needed:
+3. Install the Cassandra Python package if needed:
 
 ```bash
-pip install pymongo
+pip install cassandra-driver
 ```
 
 4. Run the program:
 
 ```bash
-Week2-Group-MongoDB.py
+python Week3-Group-Cassandra.py
 ```
 
 ## Main Menu
@@ -89,3 +88,6 @@ The program provides the following options:
 4. Delete a repository record
 5. View most popular repositories
 6. Analyze programming languages
+7. Search contributor history
+8. Exit the program
+```
