@@ -46,11 +46,29 @@ Main file:
 
 `Week2-Group-MongoDB.py`
 
+### Week 3 - Cassandra
+
+The Week3 folder contains the Cassandra version of the GitHub Archive project.
+
+The application:
+
+- Reads JSON-formatted GitHub Archive data
+- Stores repository, commit, and language data in Cassandra
+- Performs Create, Read, Update, and Delete operations
+- Displays the most popular repositories based on watch count
+- Analyzes the most common programming languages
+- Allows users to search contributor commit history
+
+Main file:
+
+'Week3-Group-Cassandra.py'
+
 ## Technologies Used
 
 - Python
 - Redis
 - MongoDB
+- Cassandra
 - PyMongo
 - JSON
 - GitHub
