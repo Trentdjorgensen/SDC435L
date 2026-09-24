@@ -63,12 +63,30 @@ Main file:
 
 'Week3-Group-Cassandra.py'
 
+### Week 4 - Neo4j
+
+The Week folder contains the Neo4j version of the GitHub Archive project.
+
+The application:
+
+- Reads JSON-formatted GitHub Archive data
+- Stores repository, commit, and language data in Neo4j
+- Performs Create, Read, Update, and Delete operations
+- Displays the most popular repositories based on watch count
+- Analyzes the most common programming languages
+- Allows users to search contributor commit history
+
+Main file:
+
+'Week4-Group-Neo4j.py'
+
 ## Technologies Used
 
 - Python
 - Redis
 - MongoDB
 - Cassandra
+- Neo4j
 - PyMongo
 - JSON
 - GitHub
