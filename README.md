@@ -80,6 +80,23 @@ Main file:
 
 'Week4-Group-Neo4j.py'
 
+### Week 5 - SqLite
+
+The Week folder contains the SQLite version of the GitHub Archive project.
+
+The application:
+
+- Reads JSON-formatted GitHub Archive data
+- Stores repository, commit, and language data in SQLite
+- Performs Create, Read, Update, and Delete operations
+- Displays the most popular repositories based on watch count
+- Display top 10 programming languages
+- Allows users to search contributor commit history
+
+Main file:
+
+'Week5-Group-SQLite.py'
+
 ## Technologies Used
 
 - Python
@@ -87,6 +104,7 @@ Main file:
 - MongoDB
 - Cassandra
 - Neo4j
+- SQLite
 - PyMongo
 - JSON
 - GitHub
